@@ -1,0 +1,151 @@
+market_id,market,countryiso3,admin1,admin2,latitude,longitude
+360,Ampara,LKA,Eastern,Ampara,7.28,81.67
+361,Batticaloa,LKA,Eastern,Batticaloa,7.72,81.7
+362,Jaffna,LKA,Northern,Jaffna,9.66,80.01
+363,Kilinochchi,LKA,Northern,Kilinochchi,9.4,80.4
+364,Mannar,LKA,Northern,Mannar,8.98,79.9
+365,Mulaitivu,LKA,Northern,Mullattivu,9.27,80.81
+366,Trincomalee,LKA,Eastern,Trincomalee,8.57,81.23
+367,Vavuniya,LKA,Northern,Vavuniya,8.75,80.5
+368,Colombo City,LKA,Western,Colombo,6.93,79.85
+1565,National Average,LKA,,,,
+1888,Polonnaruwa,LKA,North Central,Polonnaruwa,7.93,81.01
+1889,Monaragala,LKA,Uva,Moneragala,6.87,81.23
+1906,Anuradhapura,LKA,North Central,Anuradhapura,8.34,80.33
+1907,Badulla,LKA,Uva,Badulla,6.99,81.04
+1908,Hambantota,LKA,Southern,Hambantota,6.14,81.08
+1909,Gampaha,LKA,Western,Gampaha,7.08,79.98
+1910,Galle,LKA,Southern,Galle,6.04,80.22
+1911,Kalutara,LKA,Western,Kalutara,6.59,79.96
+1912,Kandy,LKA,Central,Kandy,7.29,80.59
+1913,Kegalle,LKA,Sabaragamuwa,Kegalle,7.25,80.34
+1914,Kurunegala,LKA,North Western,Kurunegala,7.48,80.32
+1915,Matale,LKA,Central,Matale,7.47,80.62
+1916,Matara,LKA,Southern,Matara,5.95,80.52
+1917,Nuwara Eliya,LKA,Central,Nuwara Eliya,6.95,80.75
+1918,Puttalam,LKA,North Western,Puttalam,8.04,79.84
+1919,Rathnapura,LKA,Sabaragamuwa,Ratnapura,6.72,80.34
+2786,Economic Centre-Pettah,LKA,Western,Colombo,6.93,79.85
+2787,Economic Centre-Maradagahamula,LKA,Western,Gampaha,7.23,79.99
+2788,Economic Centre-Dambulla,LKA,Central,Matale,7.87,80.65
+2789,Fish market-Peliyagoda,LKA,Western,Gampaha,6.97,79.89
+2790,Fish market-Negombo,LKA,Western,Gampaha,7.21,79.83
+5276,Addalaichenai,LKA,Eastern,Ampara,7.25,81.85
+5277,Annamalai,LKA,Eastern,Ampara,7.44,81.76
+5279,Arachchikattuwa,LKA,North Western,Puttalam,7.67,79.83
+5280,Medagama,LKA,North Central,Polonnaruwa,7.85,81.17
+5281,Ettampitaiya,LKA,Uva,Badulla,6.94,80.99
+5282,Badalkumbura,LKA,Uva,Moneragala,6.9,81.24
+5283,Bakinigahawala,LKA,Uva,Moneragala,7,81.28
+5284,Cheddikulam,LKA,Northern,Vavuniya,8.64,80.32
+5285,Chenkalady,LKA,Eastern,Batticaloa,7.78,81.59
+5286,Chilaw,LKA,North Western,Puttalam,7.58,79.8
+5287,Dammbagalla,LKA,Uva,Moneragala,6.98,81.37
+5288,Dimbulagala,LKA,North Central,Polonnaruwa,7.86,81.11
+5289,Diyasenpura,LKA,North Central,Polonnaruwa,8.13,81.02
+5290,Eppawala,LKA,North Central,Anuradhapura,8.15,80.41
+5291,Eravur,LKA,Eastern,Batticaloa,7.78,81.6
+5292,Galewela,LKA,Central,Matale,7.76,80.57
+5293,Girandurukotte,LKA,Uva,Badulla,7.47,81.02
+5294,Haliela,LKA,Uva,Badulla,6.95,81.03
+5295,Hammbegamuwa,LKA,Uva,Moneragala,6.54,80.95
+5296,Haputale,LKA,Uva,Badulla,6.77,80.96
+5297,Hettipola,LKA,Central,Matale,7.54,80.91
+5298,Hingurakgoda,LKA,North Central,Polonnaruwa,8.04,80.95
+5299,Jayanthipura,LKA,North Central,Polonnaruwa,7.98,80.96
+5300,Kachchaveli,LKA,Eastern,Trincomalee,8.82,81.1
+5301,Kalmadu,LKA,Northern,Vavuniya,8.85,80.4
+5302,Kaduruwela,LKA,North Central,Polonnaruwa,7.93,81.03
+5303,Kaluvanchikudi,LKA,Eastern,Batticaloa,7.52,81.78
+5304,Kekirawa,LKA,North Central,Anuradhapura,8.04,80.6
+5305,Kinniya,LKA,Eastern,Trincomalee,8.5,81.19
+5306,Kokodichcholai,LKA,Eastern,Batticaloa,7.61,81.71
+5307,Kumbukkana,LKA,Uva,Moneragala,6.81,81.3
+5308,Kumulamunai,LKA,Northern,Mullattivu,9.15,80.82
+5309,Lahugala,LKA,Eastern,Ampara,6.87,81.72
+5310,Liyangolla,LKA,Uva,Moneragala,6.9,81.43
+5311,Maraka,LKA,Central,Matale,7.59,80.96
+5312,Madampe,LKA,North Western,Puttalam,7.5,79.84
+5313,Madurankuliya,LKA,North Western,Puttalam,7.91,79.82
+5314,Mahawewa,LKA,North Western,Puttalam,7.45,79.83
+5315,Mahiyanganaya,LKA,Uva,Badulla,7.34,80.99
+5316,Mallavi,LKA,Northern,Mullattivu,9.13,80.31
+5317,Maradankadawala,LKA,North Central,Anuradhapura,8.13,80.56
+5318,Murunkan,LKA,Northern,Mannar,8.83,80.05
+5319,Muttur,LKA,Eastern,Trincomalee,8.44,81.26
+5320,Nachchaduwa,LKA,North Central,Anuradhapura,8.25,80.46
+5321,Nakkala,LKA,Uva,Moneragala,6.89,81.3
+5322,Nanaddan,LKA,Northern,Mannar,8.84,79.97
+5323,Nattandiya,LKA,North Western,Puttalam,7.41,79.86
+5324,Naula,LKA,Central,Matale,7.7,80.65
+5325,Nintavur,LKA,Eastern,Ampara,7.36,81.85
+5326,Nochchiyagama,LKA,North Central,Anuradhapura,8.26,80.21
+5327,Norochcholai,LKA,North Western,Puttalam,8.05,79.74
+5328,Oddusudan,LKA,Northern,Mullattivu,9.15,80.65
+5329,Okkampitiya,LKA,Uva,Moneragala,6.75,81.31
+5330,Omanthai,LKA,Northern,Vavuniya,8.87,80.5
+5331,Palwatta,LKA,Uva,Moneragala,6.74,81.19
+5332,Pandarikkulam,LKA,Northern,Vavuniya,8.76,80.48
+5333,Poonakary,LKA,Northern,Kilinochchi,9.51,80.21
+5334,Poovarasankulam,LKA,Northern,Vavuniya,8.75,80.37
+5335,Pulasthigama,LKA,North Central,Polonnaruwa,8.04,81.08
+5336,Pulmudai,LKA,Eastern,Trincomalee,8.94,80.99
+5337,Puthukkulam,LKA,Northern,Vavuniya,8.8,80.47
+5338,Puthukudiruppu,LKA,Northern,Mullattivu,9.31,80.7
+5339,Sammanthurai,LKA,Eastern,Ampara,7.36,81.81
+5340,Sampoor,LKA,Eastern,Trincomalee,8.46,81.29
+5341,Serunuwara,LKA,Eastern,Trincomalee,8.33,81.3
+5342,Sewagama,LKA,North Central,Polonnaruwa,7.97,81.03
+5343,Sewanapitiya,LKA,North Central,Polonnaruwa,7.92,81.18
+5344,Sigiriya,LKA,Central,Matale,7.95,80.76
+5345,Thambiluvil,LKA,Eastern,Ampara,7.13,81.85
+5346,Thambuttegama,LKA,North Central,Anuradhapura,8.16,80.3
+5347,Thanamalwila,LKA,Uva,Moneragala,6.43,81.13
+5348,Thandikkulam,LKA,Northern,Vavuniya,8.77,80.49
+5349,Thunukkai,LKA,Northern,Mullattivu,9.15,80.28
+5350,Tirappane,LKA,North Central,Anuradhapura,8.22,80.52
+5351,Valaichenai,LKA,Eastern,Batticaloa,7.92,81.53
+5352,Veppankulam,LKA,Northern,Vavuniya,8.76,80.46
+5353,Vinayagahapuram,LKA,Eastern,Ampara,7.1,81.84
+5354,Visvamadu,LKA,Northern,Mullattivu,9.39,80.55
+5355,Buttala,LKA,Uva,Moneragala,6.76,81.25
+5356,Wijayapura,LKA,Eastern,Ampara,7.4,81.72
+5885,Economic Centre - Peliyagoda,LKA,Western,Gampaha,6.97,79.89
+7106,Narahenpita,LKA,Western,Colombo,6.89,79.88
+7107,Piliyandala,LKA,Western,Colombo,6.8,79.92
+7833,Embilipitiya,LKA,Sabaragamuwa,Ratnapura,6.33,80.85
+7834,Tissamaharama,LKA,Southern,Hambantota,6.28,81.29
+7835,Galenbindunuwewa,LKA,North Central,Anuradhapura,8.29,80.72
+7836,Bandarawela,LKA,Uva,Badulla,6.83,80.99
+7837,Dehiattakandiya,LKA,Eastern,Ampara,7.66,81.05
+7838,Veyangoda(DEC),LKA,Western,Gampaha,7.16,80.06
+7839,Keppetipola (DEC},LKA,Uva,Badulla,6.91,80.91
+7840,Hanguranketha,LKA,Central,Nuwara Eliya,7.18,80.78
+7841,Meegoda(DEC),LKA,Western,Colombo,6.84,80.05
+7842,Nikaweratiya,LKA,North Western,Kurunegala,7.75,80.12
+7843,Mullativu,LKA,Northern,Mullattivu,9.32,80.7
+7844,4th Cross Street,LKA,Western,Colombo,6.94,79.85
+8003,Divulapitiya,LKA,Western,Gampaha,7.22,80.02
+8746,Matale2,LKA,Sabaragamuwa,Kegalle,7.34,80.35
+11293,Deltota,LKA,Central,Kandy,7.17,80.7
+11294,Doluwa,LKA,Central,Kandy,7.18,80.61
+11295,Gangaielakora,LKA,Central,Kandy,7.16,80.57
+11296,Pathahewaheta,LKA,Central,Kandy,7.22,80.74
+11297,Udhapahalta,LKA,Central,Kandy,7.12,80.6
+11298,Ududumbara,LKA,Central,Kandy,7.32,80.88
+11299,Kothmale East,LKA,Central,Nuwara Eliya,7.06,80.68
+11300,Mathurata,LKA,Central,Nuwara Eliya,7.08,80.8
+11301,Walapane,LKA,Central,Nuwara Eliya,7.11,80.86
+11302,Nildandahinna,LKA,Central,Nuwara Eliya,7.08,80.89
+11303,Thalawakele,LKA,Central,Nuwara Eliya,6.94,80.66
+11304,Rambukkana,LKA,Sabaragamuwa,Kegalle,7.32,80.39
+11305,Mawanella,LKA,Sabaragamuwa,Kegalle,7.25,80.45
+11306,Bulathkohupitiya,LKA,Sabaragamuwa,Kegalle,7.1,80.34
+11307,Yatiyantota,LKA,Sabaragamuwa,Kegalle,7.03,80.29
+11308,Warakapola,LKA,Sabaragamuwa,Kegalle,7.23,80.2
+11309,Aranayaka,LKA,Sabaragamuwa,Kegalle,7.15,80.46
+11310,Soronthota,LKA,Uva,Badulla,7.03,81.06
+11311,Passara,LKA,Uva,Badulla,6.93,81.15
+11312,Lunugala,LKA,Uva,Badulla,7.04,81.2
+11313,Kandekatiya,LKA,Uva,Badulla,7.19,81.03
+11314,Meegahakivula,LKA,Uva,Badulla,7.14,81.05
