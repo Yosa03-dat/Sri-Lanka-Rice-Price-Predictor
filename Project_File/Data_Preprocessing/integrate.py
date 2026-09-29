@@ -1,5 +1,3 @@
-"""Merge all preprocessed source files into final_integrated_data.csv."""
-
 from __future__ import annotations
 
 import pandas as pd

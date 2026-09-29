@@ -18,11 +18,9 @@ from ingestion import (
     FEATURE_COLS_PATH
 )
 
-# Resolve paths relative to the Final Project root (one level above Project_File/)
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MODEL_PATH = str(_PROJECT_ROOT / "xgb_real_price.json")
 
-# Global model instance
 xgb_model = None
 
 def load_trained_model():
@@ -34,13 +32,10 @@ def load_trained_model():
     else:
         print("[Warning] No saved model found. Please trigger /retrain.")
 
-# Modern FastAPI Lifespan Handler
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup: Load the model into memory
     load_trained_model()
     yield
-    # Shutdown: Clean up resources if needed
 
 app = FastAPI(
     title="Sri Lankan Rice Price Forecasting Engine",
@@ -49,18 +44,14 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# =========================================================
 # Pydantic Schemas
-# =========================================================
 class SyncDataRequest(BaseModel):
     manual_inputs: Optional[Dict[str, float]] = None
 
 class PredictRequest(BaseModel):
     features: Optional[Dict[str, float]] = None
 
-# =========================================================
 # API Endpoints
-# =========================================================
 @app.get("/")
 def root():
     return {
@@ -196,15 +187,9 @@ def predict_price(payload: PredictRequest):
         raise HTTPException(status_code=500, detail=f"Prediction failed: {str(e)}")
 
 
-# =========================================================
-# New: Date Status — tells frontend if sync is allowed
-# =========================================================
+# Date Status — tells frontend if sync is allowed
 @app.get("/date-status")
 def get_date_status():
-    """
-    Returns the dataset's latest date, the next prediction date, today's date,
-    and a flag indicating whether a sync is allowed (next prediction <= today + 7 days).
-    """
     try:
         latest_date, _ = get_latest_date()
         today = datetime.now().date()
@@ -224,28 +209,20 @@ def get_date_status():
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# =========================================================
 # New: Historical price chart data
-# =========================================================
 CHART_VARIETIES = ['Samba 1', 'Samba 2', 'Nadu 1', 'Nadu 2', 'Raw White', 'Raw red', 'Imported Rice']
 
 @app.get("/history")
 def get_price_history(days: int = 730):
-    """
-    Returns weekly rice price data for the last `days` days.
-    Used by the frontend to render the price trend chart.
-    """
     try:
         df = pd.read_csv(DATASET_PATH, index_col=0, parse_dates=True)
 
-        # Derive composite price from log_price if real_price_lkr is all NaN
         if 'real_price_lkr' not in df.columns or df['real_price_lkr'].isna().all():
             df['real_price_lkr'] = np.exp(df['log_price'])
 
         cutoff = df.index.max() - pd.Timedelta(days=days)
         sub = df[df.index >= cutoff].copy()
 
-        # Build variety series (only columns that exist)
         series = {}
         for col in CHART_VARIETIES:
             if col in sub.columns:
@@ -266,18 +243,14 @@ def get_price_history(days: int = 730):
         raise HTTPException(status_code=500, detail=f"History fetch failed: {str(e)}")
 
 
-# =========================================================
-# New: Price lookup by date
-# =========================================================
+
+# Price lookup by date
+
 @app.get("/history/{query_date}")
 def get_price_by_date(query_date: str):
-    """
-    Returns the rice price record for a given date (or the nearest available week).
-    """
     try:
         df = pd.read_csv(DATASET_PATH, index_col=0, parse_dates=True)
 
-        # Derive composite price
         if 'real_price_lkr' not in df.columns or df['real_price_lkr'].isna().all():
             df['real_price_lkr'] = np.exp(df['log_price'])
 
@@ -286,20 +259,17 @@ def get_price_by_date(query_date: str):
         except Exception:
             raise HTTPException(status_code=400, detail="Invalid date format. Use YYYY-MM-DD.")
 
-        # Check bounds
         if target_dt < df.index.min():
             raise HTTPException(status_code=400, detail=f"Date is before dataset start ({df.index.min().date()}).")
         if target_dt > df.index.max() + pd.Timedelta(days=6):
             raise HTTPException(status_code=400, detail=f"Date is beyond dataset end ({df.index.max().date()}).")
 
-        # Find exact or nearest
         diff = (df.index - target_dt).map(abs)
         nearest_idx = diff.argmin()
         row = df.iloc[nearest_idx]
         actual_date = df.index[nearest_idx]
         exact_match = actual_date == target_dt
 
-        # Collect variety prices
         varieties = {}
         for col in CHART_VARIETIES:
             if col in df.columns and pd.notna(row[col]):

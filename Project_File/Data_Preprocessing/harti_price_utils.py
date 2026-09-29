@@ -1,5 +1,3 @@
-"""Helpers for Harti rice price unit detection and conversion."""
-
 from __future__ import annotations
 
 import pandas as pd
@@ -10,7 +8,6 @@ KG_BAG_DIVISOR = 50
 
 
 def coalesce_price_columns(df: pd.DataFrame, current_col: str, previous_col: str, out_col: str) -> pd.DataFrame:
-    """Use Current price when available, otherwise fall back to Previous."""
     out = df.copy()
     out[out_col] = pd.to_numeric(out[current_col], errors="coerce")
     out[out_col] = out[out_col].fillna(pd.to_numeric(out[previous_col], errors="coerce"))
@@ -18,7 +15,6 @@ def coalesce_price_columns(df: pd.DataFrame, current_col: str, previous_col: str
 
 
 def convert_to_price_per_kg(value, prev_value=None, next_value=None) -> tuple[float, bool]:
-    """Convert wholesale price to LKR/kg when reported per 50kg bag."""
     if pd.isna(value):
         return value, False
 
@@ -34,7 +30,6 @@ def convert_to_price_per_kg(value, prev_value=None, next_value=None) -> tuple[fl
 
 
 def convert_long_prices(df: pd.DataFrame, price_col: str, market: str) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Convert each raw Harti row to LKR/kg without dropping duplicate date-item records."""
     work = df.sort_values(["Item", "Report_Date"]).copy()
     converted_prices = pd.Series(index=work.index, dtype=float)
     logs = []
@@ -71,7 +66,6 @@ def convert_long_prices(df: pd.DataFrame, price_col: str, market: str) -> tuple[
 
 
 def preprocess_harti_prices(long_df: pd.DataFrame, price_col: str, market: str) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """Return wide timeseries, full long-format output, and unit-conversion log."""
     converted_long, log_df = convert_long_prices(long_df, price_col, market)
 
     wide = converted_long.pivot_table(

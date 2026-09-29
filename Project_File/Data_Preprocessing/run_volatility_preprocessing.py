@@ -1,5 +1,3 @@
-"""Execute rice_price_volatility_preprocessing.ipynb code cells."""
-
 from __future__ import annotations
 
 import json
